@@ -7,93 +7,94 @@ PokedexApp es una aplicación móvil construida con React Native que permite a l
 ## Estructura del Proyecto
 
 El proyecto está organizado de la siguiente manera:
-PokedexApp/
-├── src/
-│ ├── application/
-│ │ ├── useCases/
-│ │ │ ├── pokemons/
-│ │ │ │ ├── GetPokemonDetails.ts
-│ │ │ │ ├── GetPokemonList.ts
-│ ├── assets/
-│ ├── config/
-│ │ ├── helpers/
-│ │ │ ├── formatters.ts
-│ │ │ ├── get-color.ts
-│ │ │ ├── validators.ts
-│ │ ├── theme/
-│ │ │ ├── colors.ts
-│ │ │ ├── spacing.ts
-│ │ │ ├── theme.ts
-│ │ │ ├── typography.ts
-│ ├── domain/
-│ │ ├── entities/
-│ │ │ ├── Pokemon.ts
-│ │ ├── repositories/
-│ │ ├── services/
-│ │ │ ├── PokemonService.ts
-│ │ ├── valueObjects/
-│ ├── infrastructure/
-│ │ ├── adapters/
-│ │ │ ├── PokemonApiAdapter.ts
-│ │ ├── api/
-│ │ │ ├── PokemonApi.ts
-│ │ ├── interfaces/
-│ │ ├── mappers/
-│ │ │ ├── PokemonMapper.ts
-│ │ ├── repositories/
-│ │ │ ├── PokemonRepository.ts
-│ ├── presentation/
-│ │ ├── components/
-│ │ │ ├── atoms/
-│ │ │ │ ├── IconButton.tsx
-│ │ │ │ ├── Loading.tsx
-│ │ │ │ ├── PokemonCard.tsx
-│ │ │ │ ├── SearchBar.tsx
-│ │ │ │ ├── StatBar.tsx
-│ │ │ ├── molecules/
-│ │ │ │ ├── CustomHeader.tsx
-│ │ │ │ ├── SortMenu.tsx
-│ │ │ ├── organisms/
-│ │ │ │ ├── PokemonList.tsx
-│ │ │ ├── screens/
-│ │ │ │ ├── home/
-│ │ │ │ │ ├── HomeScreen.tsx
-│ │ │ │ ├── pokemon/
-│ │ │ │ │ ├── PokemonDetailsScreen.tsx
-│ │ ├── templates/
-│ │ ├── hooks/
-│ │ │ ├── useDebouncedValue.ts
-│ │ ├── navigation/
-│ │ │ ├── PokedexNavigator.tsx
-│ │ │ ├── PokedexNavigatorStyles.ts
-│ │ ├── store/
-│ │ │ ├── slices/
-│ │ │ │ ├── searchSlice.ts
-│ │ │ ├── thunks/
-│ │ │ ├── index.ts
-│ │ │ ├── selectors.ts
-│ │ ├── styles/
-│ │ │ ├── atoms/
-│ │ │ │ ├── IconButtonStyles.ts
-│ │ │ │ ├── LoadingStyles.ts
-│ │ │ │ ├── PokemonCardStyles.ts
-│ │ │ │ ├── SearchBarStyles.ts
-│ │ │ │ ├── StatBarStyles.ts
-│ │ │ ├── molecules/
-│ │ │ │ ├── CustomHeaderStyles.ts
-│ │ │ │ ├── SortMenuStyles.ts
-│ │ │ ├── organisms/
-│ │ │ │ ├── PokemonListStyles.ts
-│ │ │ ├── screens/
-│ │ │ │ ├── home/
-│ │ │ │ │ ├── HomeScreenStyles.ts
-│ │ │ │ ├── pokemon/
-│ │ │ │ │ ├── PokemonDetailsScreenStyles.ts
-│ │ │ │ ├── search/
-│ │ ├── templates/
-├── .gitignore
-├── app.json
-├── App.tsx
+## Estructura del Proyecto
+
+- **src**
+  - **application**
+    - **useCases**
+      - **pokemons**
+        - GetPokemonDetails.ts
+        - GetPokemonList.ts
+  - **assets**
+  - **config**
+    - **helpers**
+      - formatters.ts
+      - get-color.ts
+      - validators.ts
+    - **theme**
+      - colors.ts
+      - spacing.ts
+      - theme.ts
+      - typography.ts
+  - **domain**
+    - **entities**
+      - Pokemon.ts
+    - **repositories**
+    - **services**
+      - PokemonService.ts
+    - **valueObjects**
+  - **infrastructure**
+    - **adapters**
+      - PokemonApiAdapter.ts
+    - **api**
+      - PokemonApi.ts
+    - **interfaces**
+    - **mappers**
+      - PokemonMapper.ts
+    - **repositories**
+      - PokemonRepository.ts
+  - **presentation**
+    - **components**
+      - **atoms**
+        - IconButton.tsx
+        - Loading.tsx
+        - PokemonCard.tsx
+        - SearchBar.tsx
+        - StatBar.tsx
+      - **molecules**
+        - CustomHeader.tsx
+        - SortMenu.tsx
+      - **organisms**
+        - PokemonList.tsx
+      - **screens**
+        - **home**
+          - HomeScreen.tsx
+        - **pokemon**
+          - PokemonDetailsScreen.tsx
+      - **templates**
+    - **hooks**
+      - useDebouncedValue.ts
+    - **navigation**
+      - PokedexNavigator.tsx
+      - PokedexNavigatorStyles.ts
+    - **store**
+      - **slices**
+        - searchSlice.ts
+      - thunks/
+      - index.ts
+      - selectors.ts
+    - **styles**
+      - **atoms**
+        - IconButtonStyles.ts
+        - LoadingStyles.ts
+        - PokemonCardStyles.ts
+        - SearchBarStyles.ts
+        - StatBarStyles.ts
+      - **molecules**
+        - CustomHeaderStyles.ts
+        - SortMenuStyles.ts
+      - **organisms**
+        - PokemonListStyles.ts
+      - **screens**
+        - **home**
+          - HomeScreenStyles.ts
+        - **pokemon**
+          - PokemonDetailsScreenStyles.ts
+        - search/
+      - templates/
+- .gitignore
+- app.json
+- App.tsx
 
 ## Tecnologías Utilizadas
 
